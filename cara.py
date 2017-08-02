@@ -14,7 +14,7 @@ rawCapture = PiRGBArray(camera, size=(640, 480))
 time.sleep(0.1)
 
 # capture frames from the camera
-for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port$
+for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port
     # grab the raw NumPy array representing the image, then initialize the time$
     # and occupied/unoccupied text
     image = frame.array
