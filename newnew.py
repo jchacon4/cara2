@@ -35,18 +35,11 @@ obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
 
 
 # capture frames from the camera
-<<<<<<< HEAD
 for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
     # grab the raw NumPy array representing the image, then initialize the time$
     # and occupied/unoccupied text
     image = frame.array
     ret, frame = image
-=======
-for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port
-    # grab the raw NumPy array representing the image, then initialize the time$
-    # and occupied/unoccupied text
-    image = frame.array
->>>>>>> e0a5e0e7f8a714f2b4739d887da2da2933c4e69b
 
 
     face_locations = face_recognition.face_locations(image)
